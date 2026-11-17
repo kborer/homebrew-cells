@@ -33,6 +33,8 @@ jobs:
             brew trust --formula kborer/cells/terminal-cells
           fi
           brew install --build-from-source kborer/cells/terminal-cells
+      - name: Verify Homebrew Python includes native curses
+        run: '"$(brew --prefix python@3.14)/bin/python3.14" -c "import curses"'
       - run: brew test kborer/cells/terminal-cells
       - run: brew audit --strict kborer/cells/terminal-cells
       - name: Verify the manual and remove the package
