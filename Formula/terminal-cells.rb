@@ -10,7 +10,7 @@ class TerminalCells < Formula
   def install
     libexec.install "terminal_cells"
     (bin/"cells").write <<~PYTHON
-      #!#{Formula["python@3.14"].opt_bin}/python3.14
+      #!#{formula_opt_bin("python@3.14")}/python3.14
       import sys
       sys.path.insert(0, "#{libexec}")
       from terminal_cells.cli import main
