@@ -1,8 +1,8 @@
 class TerminalCells < Formula
   desc "Living microscope slide in your terminal"
   homepage "https://github.com/kborer/cells"
-  url "https://github.com/kborer/cells/releases/download/v0.1.1/terminal_cells-0.1.1.tar.gz"
-  sha256 "d6c91cec27bb131ef16c49fd3b603109148f3ed0724ba09a332de815a61f66e8"
+  url "https://github.com/kborer/cells/releases/download/v0.1.2/terminal_cells-0.1.2.tar.gz"
+  sha256 "5547529ddd5f33b76d9245648d3360fe5101200ca3173614d7c3092866affc20"
   license "0BSD"
 
   depends_on "python@3.14"
